@@ -6,7 +6,9 @@
 $Email = $_POST['email'];
 $Password = $_POST['password'];
 $database = mysqli_connect("localhost", "root", "12345678","huproject");
-
+ if(!$database){
+     printf("Error: %s\n", mysqli_error($database));
+ }
 $query = "SELECT * FROM admin WHERE Admin_email = '$Email' and Admin_password = '$Password'";
 $result = mysqli_query($database, $query);
 

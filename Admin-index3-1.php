@@ -4,45 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style3.css"/>
-    <style>
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
 
-        .edit-btn {
-            background-color: #3498db;
-        }
-
-        .edit-btn:hover {
-            background-color: #2980b9;
-        }
-
-        .add-btn {
-            background-color: #2ecc71;
-            float :right;
-
-        }
-
-        .add-btn:hover {
-            background-color: #27ae60;
-        }
-
-        .delete-btn {
-            background-color: #e74c3c;
-        }
-
-        .delete-btn:hover {
-            background-color: #c0392b;
-        }
-    </style>
 </head>
 <body>
 <?php

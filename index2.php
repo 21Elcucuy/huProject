@@ -8,11 +8,11 @@
 </head>
 <body>
 <?php
- if(!isset($_GET["email"]))
- {
+if(!isset($_GET["email"]))
+{
     print("Please enter a valid email addres");
     exit();
- }
+}
 ?>
 <?php
 $Email = $_GET["email"];
@@ -47,7 +47,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             $coursename = $row2["course_name"];
             $room_number = $row2["room_id"];
             $prof_id = $row2["prof_id"];
-            $profquery = "SELECT * FROM `prof` WHERE prof_id = $prof_id";
+            $profquery = "SELECT * FROM prof WHERE prof_id = $prof_id";
             $profexecute = mysqli_query($database, $profquery);
             if ($profexecute && mysqli_num_rows($profexecute) > 0)
             {
@@ -85,11 +85,15 @@ if ($result && mysqli_num_rows($result) > 0) {
     <div class="container">
         <div class="bo1 bo">Course Name :<?php print($coursename) ?></div>
         <div class="bo2 bo">Instructor : <?php print($profname)?> </div>
-        <div class="bo3 bo">Room Number : <?php print($room_number)?> </div>
+        <div class="bo3 bo">Room Number : <?php print($room_number)?></div>
+        <div class="bo3 bo"><a href="indexAddCourseAsStudent.php?student_id=<?php echo htmlspecialchars($student_id) ?>">Add Courses : </div>
         <div class="bo4 bo"><a href="https://www.itzoneplus.com/files/in/Web">مصادر المادة</a></div>
         <div class="bo4 bo"><a href="https://hu.edu.jo/unitCenter/class_a.aspx?t=0&unitid=40000000">جريدة المواد</a></div>
     </div>
 </div>
+
+
+
 
 </body>
 </html>

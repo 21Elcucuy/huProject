@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <form method="post" action="saveInsertStudnetToDatabase.php">
+    <form method="post" action="saveInsertStudentToDatabase.php">
         <p> <label >ID
                 <br />
                 <input id="" name="student_id" type="text"  required>

@@ -43,7 +43,6 @@ $row = mysqli_fetch_array($result)
                 <input name="password" type="password"  value="<?php print($row["password"]); ?>" required />
             </label>
 
-
         <button class="b1" type ="submit"><a class="a1">Submit</a></button>
     </form>
 </div>

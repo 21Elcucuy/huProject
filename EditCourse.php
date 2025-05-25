@@ -45,7 +45,6 @@ $row = mysqli_fetch_array($result)
             </label>
         </p>
         <?php
-        $database = mysqli_connect("localhost", "root", "12345678","huproject");
 
         $query2 = "Select * from prof";
         $result2 = mysqli_query($database, $query2);
